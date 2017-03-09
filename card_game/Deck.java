@@ -1,7 +1,21 @@
-// import java.util.*;
+package card_game;
+import java.util.*;
 
-// public class Deck {
+public class Deck {
 
-//   ArrayList<Card> cards; 
+ private ArrayList<Card> cards; 
 
-// }
+ public Deck(){
+  this.cards = new ArrayList<Card>();
+ 
+  }
+
+  public int cardCount(){
+    return cards.size();
+  }
+
+  public void addCard(Card card){
+  cards.add(card);
+  }
+
+}
