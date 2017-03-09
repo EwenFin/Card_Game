@@ -1,4 +1,4 @@
-import java.util.*;
+package card_game;
 
 public class Card {
 
