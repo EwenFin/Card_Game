@@ -10,4 +10,13 @@ public class Card {
     this.rank = rank;
   }
 
+
+  public Suit getSuit(){
+    return this.suit;
+  }
+
+  public Rank getRank(){
+    return this.rank;
+  }
+
 }

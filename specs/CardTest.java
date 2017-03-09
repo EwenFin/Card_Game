@@ -17,14 +17,14 @@ public class CardTest{
 
   @Test
   public void canGetSuit(){
-    assertEquals(Suit.HEARTS, card1.getSuit);
-    assertEquals(Suit.SPADES, card3.getSuit);
+    assertEquals(Suit.HEARTS, card1.getSuit());
+    assertEquals(Suit.SPADES, card3.getSuit());
   }
 
   @Test
   public void canGetRank(){
-    assertEquals(Rank.KING, card1.getRank);
-    assertEquals(Rank.JACK, card2.getRank);
+    assertEquals(Rank.KING, card1.getRank());
+    assertEquals(Rank.JACK, card2.getRank());
   }
 }
 
