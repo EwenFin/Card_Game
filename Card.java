@@ -1,3 +1,5 @@
-public class Card extends ICard{
+import java.util.*;
+
+public class Card {
 
 }
