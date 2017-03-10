@@ -7,15 +7,17 @@ public class DeckTest{
   Deck deck;
 
   Hand hand;
-
   Card card1;
   Card card2;
   Card card3;
 
+  Player player1;
+
   @Before
   public void before(){
-    deck = new Deck();
     hand = new Hand();
+    player1 = new Player("Ewen", hand);
+    deck = new Deck();    
     card1 = new Card(Suit.HEARTS, Rank.KING);
     card2 = new Card(Suit.DIAMONDS, Rank.JACK);
     card3 = new Card(Suit.SPADES, Rank.ACE);
@@ -41,8 +43,8 @@ public class DeckTest{
     deck.addCardToDeck(card1);
     deck.addCardToDeck(card2);
     deck.addCardToDeck(card3);
-    deck.deal(hand);
-    assertEquals(1, hand.cardCount());
+    deck.deal(player1);
+    assertEquals(1, player1.hand.cardCount());
     assertEquals(2, deck.cardCount());
 
   }

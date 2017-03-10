@@ -23,11 +23,12 @@ public class Deck {
   }
 
   public void shuffle(){
-    Collections.shuffle(cards);
+    Collections.shuffle(this.cards);
   }
 
-  public void deal(Hand hand){
+  public void deal(Player player){
     Card card = cards.get(0);
+    Hand hand = player.getHand();
     hand.addCardToHand(card);
     removeCardFromDeck(card);
   } 
