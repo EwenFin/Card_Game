@@ -33,4 +33,11 @@ public class Deck {
     removeCardFromDeck(card);
   } 
 
+  public void buildDeck(){
+    for (Suit suit : Suit.values()) {
+        for (Rank rank : Rank.values()) {
+              cards.add(new Card(suit, rank));
+            }
+          }
+        }
 }

@@ -46,6 +46,11 @@ public class DeckTest{
     deck.deal(player1);
     assertEquals(1, player1.hand.cardCount());
     assertEquals(2, deck.cardCount());
+  }
 
+  @Test
+  public void fullCardDeck(){
+    deck.buildDeck();
+    assertEquals(52, deck.cardCount());
   }
 }

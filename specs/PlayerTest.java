@@ -25,11 +25,13 @@ public class PlayerTest {
   }
 
   @Test
-  public void playerHasHand(){
+  public void canDealToHand(){
     deck.addCardToDeck(card1);
     deck.addCardToDeck(card2);
     deck.addCardToDeck(card3);
     deck.deal(player);
+    assertEquals(1, player.getHand().cardCount());
+    assertEquals(2, deck.cardCount());
   }
 
 
