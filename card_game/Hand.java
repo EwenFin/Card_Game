@@ -1,8 +1,21 @@
-// import java.util.*;
+package card_game;
+import java.util.*;
 
-// public class Hand {
+public class Hand {
 
-//   ArrayList<Card> cards;
-  
+ private ArrayList<Card> hand; 
 
-// }
+ public Hand(){
+  this.hand = new ArrayList<Card>();
+ 
+  }
+
+  public int cardCount(){
+    return hand.size();
+  }
+
+  public void addCardToHand(Card card){
+  hand.add(card);
+  }
+
+}

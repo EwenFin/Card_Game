@@ -20,7 +20,7 @@ public class DeckTest{
 
   @Test
   public void canAddCardToDeck(){
-    deck.addCard(card1);
+    deck.addCardToDeck(card1);
     assertEquals(1, deck.cardCount());
   }  
 }

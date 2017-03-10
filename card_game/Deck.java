@@ -14,7 +14,7 @@ public class Deck {
     return cards.size();
   }
 
-  public void addCard(Card card){
+  public void addCardToDeck(Card card){
   cards.add(card);
   }
 
