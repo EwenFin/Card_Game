@@ -18,4 +18,8 @@ public class Deck {
   cards.add(card);
   }
 
+  public void removeCardFromDeck(Card card){
+  cards.remove(card);
+  }
+
 }

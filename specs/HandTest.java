@@ -22,5 +22,7 @@ public class HandTest{
   public void canAddCardToHand(){
     hand.addCardToHand(card1);
     assertEquals(1, hand.cardCount());
-  }  
+  }
+
+  
 }
