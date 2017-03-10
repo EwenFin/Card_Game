@@ -22,4 +22,14 @@ public class Deck {
   cards.remove(card);
   }
 
+  public void shuffle(){
+    Collections.shuffle(cards);
+  }
+
+  public void deal(Hand hand){
+    Card card = cards.get(0);
+    hand.addCardToHand(card);
+    removeCardFromDeck(card);
+  } 
+
 }
