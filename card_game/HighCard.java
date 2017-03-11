@@ -1,12 +1,12 @@
 package card_game;
 import java.util.*;
 
-public class HighCard {
-  public Deck deck;
+public class HighCard extends Deck{
+  // public Deck deck;
   public ArrayList<Player> players;
 
   public HighCard(){
-    this.deck = deck;
+    // this.deck = deck;
     this.players = new ArrayList<Player>();
   }
 

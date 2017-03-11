@@ -41,7 +41,7 @@ public void canAddPlayersToGame(){
 
 @Test
 public void TestDeck(){
-  assertEquals(52, deck.cardCount());
+  assertEquals(52, game.cardCount());
 
 }
 
