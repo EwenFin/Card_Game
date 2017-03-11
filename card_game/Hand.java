@@ -18,4 +18,8 @@ public class Hand {
   hand.add(card);
   }
 
+  public void discardHand(){
+    hand.clear();
+  }
+
 }

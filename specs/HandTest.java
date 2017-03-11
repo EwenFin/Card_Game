@@ -24,5 +24,12 @@ public class HandTest{
     assertEquals(1, hand.cardCount());
   }
 
+  @Test
+  public void canDiscard(){
+    hand.addCardToHand(card1);
+    hand.discardHand();
+    assertEquals(0, hand.cardCount());
+  }
+
   
 }

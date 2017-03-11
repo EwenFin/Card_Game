@@ -18,6 +18,16 @@ public class HighCard extends Deck{
     players.add(player);
   }
 
-
-
+  
+  public void deal(){
+    for(Player player : this.players){
+      Card card = cards.get(cards.size() - 1);
+      Hand hand = player.getHand();
+      hand.addCardToHand(card);
+      removeCardFromDeck(card);
+    }
+  }
 }
+
+
+
