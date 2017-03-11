@@ -26,16 +26,16 @@ public class DeckTest{
   @Test
   public void canAddCardToDeck(){
     deck.addCardToDeck(card1);
-    assertEquals(1, deck.cardCount());
+    assertEquals(53, deck.cardCount());
   } 
 
   @Test
   public void canRemoveCardFromDeck(){
     deck.addCardToDeck(card1);
     deck.addCardToDeck(card2);
-    assertEquals(2, deck.cardCount());
+    assertEquals(54, deck.cardCount());
     deck.removeCardFromDeck(card1);
-    assertEquals(1,deck.cardCount());
+    assertEquals(53,deck.cardCount());
   } 
 
   @Test
@@ -45,12 +45,12 @@ public class DeckTest{
     deck.addCardToDeck(card3);
     deck.deal(player1);
     assertEquals(1, player1.hand.cardCount());
-    assertEquals(2, deck.cardCount());
+    assertEquals(54, deck.cardCount());
   }
 
   @Test
-  public void fullCardDeck(){
-    deck.buildDeck();
+  public void fullDeck(){
+    // deck.buildDeck();
     assertEquals(52, deck.cardCount());
   }
 }

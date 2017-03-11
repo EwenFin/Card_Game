@@ -7,7 +7,7 @@ public class HighCardTest{
 
   HighCard game;
 
-  Deck deck;
+   Deck deck;
 
   Player player1;
   Player player2;
@@ -19,7 +19,7 @@ public class HighCardTest{
 
 @Before
 public void before(){
-  deck = new Deck();
+   deck = new Deck();
   player1hand = new Hand();
   player2hand = new Hand();
   player3hand = new Hand();
@@ -39,8 +39,18 @@ public void canAddPlayersToGame(){
 
 }
 
+@Test
+public void TestDeck(){
+  assertEquals(52, deck.cardCount());
+
+}
 
 
-
-
+@Test
+public void canDealToPlayers(){
+  game.addPlayerToGame(player1);
+  game.addPlayerToGame(player2);
+  game.addPlayerToGame(player3);
+  
+  } 
 }
