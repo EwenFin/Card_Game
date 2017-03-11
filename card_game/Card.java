@@ -19,4 +19,8 @@ public class Card {
     return this.rank;
   }
 
+  public String showCard(){
+    return this.rank.toString() + " of " + this.suit.toString();
+
+  }
 }

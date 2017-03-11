@@ -22,4 +22,13 @@ public class Hand {
     hand.clear();
   }
 
+  // public String showHand(){
+  //   String result = " ";
+  //   for(Card card : hand){
+  //     result = result + System.out.println(card.getRank()+ " of " + card.getSuit());
+  //   }
+  //    return result;
+  //  }
+
 }
+

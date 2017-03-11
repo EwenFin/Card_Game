@@ -26,5 +26,10 @@ public class CardTest{
     assertEquals(Rank.KING, card1.getRank());
     assertEquals(Rank.JACK, card2.getRank());
   }
+
+  @Test 
+  public void canShowCard(){
+    assertEquals("KING of HEARTS", card1.showCard());
+  }
 }
 

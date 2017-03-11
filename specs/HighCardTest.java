@@ -17,6 +17,10 @@ public class HighCardTest{
   Hand player2hand;
   Hand player3hand;
 
+  Card card1;
+  Card card2;
+  Card card3;
+
   @Before
   public void before(){
    deck = new Deck();
@@ -27,14 +31,17 @@ public class HighCardTest{
    player2 = new Player("Steven", player2hand);
    player3 = new Player("Oli", player3hand);
    game = new HighCard();
+   game.addPlayerToGame(player1);
+   game.addPlayerToGame(player2);
+   game.addPlayerToGame(player3);
+   card1 = new Card(Suit.HEARTS, Rank.KING);
+   card2 = new Card(Suit.DIAMONDS, Rank.JACK);
+   card3 = new Card(Suit.SPADES, Rank.ACE);
 
  }
 
  @Test
  public void canAddPlayersToGame(){
-  game.addPlayerToGame(player1);
-  game.addPlayerToGame(player2);
-  game.addPlayerToGame(player3);
   assertEquals(3, game.playerCount());
 
 }
@@ -47,14 +54,22 @@ public void TestDeck(){
 
 @Test
 public void canDealToPlayers(){
-  game.addPlayerToGame(player1);
-  game.addPlayerToGame(player2);
-  game.addPlayerToGame(player3);
   game.deal();
   assertEquals(1, player1hand.cardCount());
   assertEquals(1, player2hand.cardCount());
   assertEquals(1, player3hand.cardCount());
     }
-  }
+  
+// @Test
+// public void canShowHand(){
+// player1hand.addCardToHand(card1);
+// player2hand.addCardToHand(card2);
+// player3hand.addCardToHand(card3);
+// assertEquals("Ewen has the KING of HEARTS, Steven has the JACK of DIAMONDS, Oli has the ACE of SPADES",  game.showCards());
 
 
+
+
+
+
+}

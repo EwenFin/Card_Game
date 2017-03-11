@@ -26,7 +26,14 @@ public class HighCard extends Deck{
       hand.addCardToHand(card);
       removeCardFromDeck(card);
     }
-  }
+   }
+
+  // public String showHand(){
+  //   result = ""
+  //     for (Player player : this.players){
+  //       result = result + System.out.println();
+  //     } 
+  // }
 }
 
 

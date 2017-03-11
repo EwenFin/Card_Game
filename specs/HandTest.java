@@ -8,15 +8,14 @@ public class HandTest{
 
   Card card1;
   Card card2;
-  Card card3;
+  
 
   @Before
   public void before(){
     hand = new Hand();
     card1 = new Card(Suit.HEARTS, Rank.KING);
     card2 = new Card(Suit.DIAMONDS, Rank.JACK);
-    card3 = new Card(Suit.SPADES, Rank.ACE);
-  }
+      }
 
   @Test
   public void canAddCardToHand(){
@@ -30,6 +29,13 @@ public class HandTest{
     hand.discardHand();
     assertEquals(0, hand.cardCount());
   }
+
+  // @Test
+  // public void canShowHand(){
+  //   hand.addCardToHand(card1);
+  //   hand.addCardToHand(card2);
+  //   assertEquals("KING of HEARTS, JACK of DIAMONDS", hand.showHand());
+  // }
 
   
 }
