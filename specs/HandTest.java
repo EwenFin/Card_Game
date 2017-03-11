@@ -30,12 +30,12 @@ public class HandTest{
     assertEquals(0, hand.cardCount());
   }
 
-  // @Test
-  // public void canShowHand(){
-  //   hand.addCardToHand(card1);
-  //   hand.addCardToHand(card2);
-  //   assertEquals("KING of HEARTS, JACK of DIAMONDS", hand.showHand());
-  // }
+  @Test
+  public void canShowHand(){
+    hand.addCardToHand(card1);
+    hand.addCardToHand(card2);
+    assertEquals("KING of HEARTS, JACK of DIAMONDS, ", hand.showHand());
+  }
 
   
 }
