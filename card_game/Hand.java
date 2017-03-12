@@ -14,6 +14,10 @@ public class Hand {
     return hand.size();
   }
 
+  public ArrayList getHand(){
+    return this.hand;
+  }
+
   public void addCardToHand(Card card){
   hand.add(card);
   }

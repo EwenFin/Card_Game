@@ -42,5 +42,13 @@ public class HandTest{
     hand.addCardToHand(card1);
     assertEquals(13, hand.handValue());
   }
+
+  @Test
+  public void testGetHand(){
+    hand.addCardToHand(card1);
+    assertEquals(card1, hand.getHand().get(0));
+
+
+  }
   
 }

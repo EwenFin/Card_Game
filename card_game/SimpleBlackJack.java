@@ -8,6 +8,10 @@ public class SimpleBlackJack extends HighCard{
     this.players = new ArrayList<Player>();
   }
 
+  // public Integer getScore(Hand hand){
+  //    = hand.getHand()
+  // }
+
 
   @Override
   public String winner(Player player1, Player player2){

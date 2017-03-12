@@ -56,14 +56,21 @@ public class SimpleBlackJackTest{
     assertEquals("Ewen has the KING of HEARTS, FOUR of CLUBS, Steven has the ACE of SPADES, JACK of DIAMONDS, ",  game.showHands());
         }
 
-    @Test
-    public void testWinner(){
-      player1hand.addCardToHand(card1);
-      player1hand.addCardToHand(card4);
-      player2hand.addCardToHand(card3);
-      player2hand.addCardToHand(card2);
-      assertEquals("Steven Wins with 21", game.winner(player1, player2));
-    }
+    // @Test
+    // public void testCardRounding(){
+    //   player1hand.addCardToHand(card1);
+    //   player1hand.addCardToHand(card3);
+    //   assertEquals(21, player1hand.getScore(player1hand));
+    // }
+
+    // @Test
+    // public void testWinner(){
+    //   player1hand.addCardToHand(card1);
+    //   player1hand.addCardToHand(card4);
+    //   player2hand.addCardToHand(card3);
+    //   player2hand.addCardToHand(card2);
+    //   assertEquals("Steven Wins with 21", game.winner(player1, player2));
+    // }
 
 
 
