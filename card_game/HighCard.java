@@ -3,11 +3,11 @@ import java.util.*;
 
 public class HighCard extends Deck{
   public ArrayList<Player> players;
-  public HashMap<String, Integer> winner; 
+  // public HashMap<String, Integer> winner; 
 
   public HighCard(){
     this.players = new ArrayList<Player>();
-    this.winner = new HashMap<String, Integer>();
+    // this.winner = new HashMap<String, Integer>();
   }
 
   public int playerCount(){
@@ -49,11 +49,8 @@ public class HighCard extends Deck{
     else{
       return player2.getName() + " Wins!";
     }
-
-
   }
-
-
+}
   // public String winner(){
   //   for(Player player : this.players){
   //     winner.put(player.getName(), player.getHand().handValue());
@@ -61,10 +58,10 @@ public class HighCard extends Deck{
   //     Map sortedWinner = sortByValue(winner);
 
 
-    // the plan was to add the players and handvalues into a Hashmap, sort the hashmap by value and then return the key with the highest value, but I'm a bit lost on doing that.
+    // the plan was to add the players and handvalues into a Hashmap, sort the hashmap by value and then return the key with the highest value, but I'm a bit lost on the sorting.
      
 
-}
+
   
 
 

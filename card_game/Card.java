@@ -24,6 +24,6 @@ public class Card {
   }
 
   public int cardValue(){
-    return this.rank.ordinal();
+    return this.rank.ordinal() + 2;
   }
 }

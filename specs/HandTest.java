@@ -40,7 +40,7 @@ public class HandTest{
   @Test
   public void testHandValue(){
     hand.addCardToHand(card1);
-    assertEquals(11, hand.handValue());
+    assertEquals(13, hand.handValue());
   }
   
 }
