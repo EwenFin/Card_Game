@@ -8,15 +8,29 @@ public class SimpleBlackJack extends HighCard{
     this.players = new ArrayList<Player>();
   }
 
-  // public Integer getScore(Hand hand){
-  //    = hand.getHand()
-  // }
+  public Integer getScore(Hand hand){
+    ArrayList<Card> cards = hand.getHand();
+    Integer score = 0;
+    for(Card card : cards){
+      if(card.cardValue() <= 10){
+        score = score + card.cardValue();
+      }
+      else if(card.cardValue() >= 11 && card.cardValue() < 14){
+        score = score + 10; 
+      } 
+      else if(card.cardValue() == 14){
+        score = score + 11;
+      }
+ 
+    }
+    return score;
+  }
 
 
   @Override
   public String winner(Player player1, Player player2){
-    Integer player1score = player1.getHand().handValue();
-    Integer player2score = player2.getHand().handValue();
+    Integer player1score = getScore(player1.getHand());
+    Integer player2score = getScore(player2.getHand());
     if (player1score > player2score){
       return player1.getName() + " Wins with " +player1score.toString();
     }

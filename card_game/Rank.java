@@ -1,6 +1,7 @@
 package card_game;
 
 public enum Rank{
+
   TWO,
   THREE,
   FOUR,
@@ -13,5 +14,6 @@ public enum Rank{
   JACK,
   QUEEN,
   KING,
-  ACE
+  ACE,
+  
 }
