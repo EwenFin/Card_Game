@@ -28,12 +28,14 @@ public class HighCard extends Deck{
     }
    }
 
-  // public String showHand(){
-  //   result = ""
-  //     for (Player player : this.players){
-  //       result = result + System.out.println();
-  //     } 
-  // }
+  public String showHands(){
+    String result = "";
+      for (Player player : this.players){
+        result = result + player.getName() + " has the " +player.getHand().showHand();
+        
+      } 
+      return result;
+  }
 }
 
 

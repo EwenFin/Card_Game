@@ -12,6 +12,10 @@ public class Player {
     this.hand = hand;
   }
 
+  public String getName(){
+    return this.name;
+  }
+
   public Hand getHand(){
     return this.hand;
   }

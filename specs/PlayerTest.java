@@ -25,6 +25,13 @@ public class PlayerTest {
   }
 
   @Test
+  public void hasName(){
+    assertEquals("Ewen", player.getName());
+  }
+
+
+
+  @Test
   public void canDealToHand(){
     deck.addCardToDeck(card1);
     deck.addCardToDeck(card2);
