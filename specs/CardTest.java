@@ -31,5 +31,11 @@ public class CardTest{
   public void canShowCard(){
     assertEquals("KING of HEARTS", card1.showCard());
   }
+
+  @Test
+  public void testCardValue(){
+    assertEquals(11, card1.cardValue());
+    assertEquals(12, card3.cardValue());
+  }
 }
 

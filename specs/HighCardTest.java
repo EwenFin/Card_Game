@@ -68,6 +68,16 @@ player3hand.addCardToHand(card3);
 assertEquals("Ewen has the KING of HEARTS, Steven has the JACK of DIAMONDS, Oli has the ACE of SPADES, ",  game.showHands());
     }
 
+@Test
+public void testWinner(){
+  player1hand.addCardToHand(card1);
+  player2hand.addCardToHand(card2);
+  // player3hand.addCardToHand(card3);
+  assertEquals("Ewen Wins!", game.winner(player1, player2));
+
+  }
+
+
 
 
 

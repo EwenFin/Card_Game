@@ -21,6 +21,9 @@ public class Card {
 
   public String showCard(){
     return this.rank.toString() + " of " + this.suit.toString();
+  }
 
+  public int cardValue(){
+    return this.rank.ordinal();
   }
 }

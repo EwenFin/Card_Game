@@ -37,5 +37,10 @@ public class HandTest{
     assertEquals("KING of HEARTS, JACK of DIAMONDS, ", hand.showHand());
   }
 
+  @Test
+  public void testHandValue(){
+    hand.addCardToHand(card1);
+    assertEquals(11, hand.handValue());
+  }
   
 }

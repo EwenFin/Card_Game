@@ -22,6 +22,15 @@ public class Hand {
     hand.clear();
   }
 
+  public int handValue(){
+    int result = 0;
+    for(Card card : hand){
+      result = result + card.cardValue();
+    }
+    return result;
+  }
+
+
   public String showHand(){
     String result = "";
     for(Card card : hand){
@@ -29,6 +38,8 @@ public class Hand {
     }
      return result;
    }
+
+
 
 }
 
